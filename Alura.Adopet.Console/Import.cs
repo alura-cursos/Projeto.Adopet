@@ -1,5 +1,6 @@
 ﻿namespace Alura.Adopet.Console
 {
+    [DocComando("adopet import <ARQUIVO> comando que realiza a importação do arquivo de pets.")]
     internal class Import
     {
         public async Task ImportacaoArquivoPetAsync(string caminhoDoArquivoDeImportacao)

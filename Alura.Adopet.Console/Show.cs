@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Alura.Adopet.Console
+﻿namespace Alura.Adopet.Console
 {
+    [DocComando("adopet show <ARQUIVO> comando que exibe no terminal o conteúdo do arquivo importado.")]
     internal class Show
     {
         public void ExibeConteudoArquivo(string caminhoDoArquivoASerExibido)        

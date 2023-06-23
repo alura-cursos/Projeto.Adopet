@@ -1,5 +1,6 @@
 ﻿namespace Alura.Adopet.Console
 {
+    [DocComando("adopet list comando que exibe no terminal o conteúdo cadastrado na base de dados da AdoPet.")]
     internal class List
     {
         public async Task ListaDadosPetsDaAPIAsync()

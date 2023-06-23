@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Alura.Adopet.Console
+﻿namespace Alura.Adopet.Console
 {
+    [DocComando("adopet help comando que exibe informações da ajuda.")]
     internal class Help
     {
         public void ExibeDocumentacao(string[] parametros)
