@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Alura.Adopet.Console
+namespace Alura.Adopet.Console.Comandos
 {
-    public enum TipoPet
+    internal interface IComando
     {
-        Gato,
-        Cachorro
+        Task ExecutarAsync(string[] args);
     }
 }

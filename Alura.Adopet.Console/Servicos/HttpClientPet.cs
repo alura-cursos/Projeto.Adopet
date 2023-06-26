@@ -1,8 +1,8 @@
 ﻿using System.Net.Http.Headers;
 using System.Net.Http.Json;
+using Alura.Adopet.Console.Modelos;
 
-
-namespace Alura.Adopet.Console
+namespace Alura.Adopet.Console.Servicos
 {
     internal class HttpClientPet
     {
