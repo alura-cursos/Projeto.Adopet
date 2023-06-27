@@ -4,12 +4,12 @@ using Alura.Adopet.Console.Modelos;
 
 namespace Alura.Adopet.Console.Servicos
 {
-    internal class HttpClientPet
+    public class HttpClientPet
     {
         private HttpClient client;
-        public HttpClientPet()
+        public HttpClientPet(string uri = "http://localhost:5057")
         {
-            client = ConfiguraHttpClient("http://localhost:5057");
+            client = ConfiguraHttpClient(uri);
         }
 
         HttpClient ConfiguraHttpClient(string url)
