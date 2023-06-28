@@ -1,2 +1,0 @@
-2023-06-23 10:23:27.602 -03:00 [INF] Listagem gerada com sucesso!
-2023-06-23 10:25:33.330 -03:00 [INF] Listagem gerada com sucesso!

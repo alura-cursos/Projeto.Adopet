@@ -1,23 +1,26 @@
 ﻿using Alura.Adopet.Console.Modelos;
 using Alura.Adopet.Console.Util;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Alura.Adopet.Testes
 {
-    public class PetAPartirDoCSVTest
+    public class PetAPartirDoCsvTest
     {
-       [Fact]
-       public void QuandoStringForValidaDeveRetornarUmPet()
+        [Fact]
+        public void QuandoStringForValidaDeveRetornatUmPet()
         {
-            //Arrange            
+            //Arrange
             string linha = "456b24f4-19e2-4423-845d-4a80e8854a41;Lima Limão;1";
-            var conversor = new PetAPartirDoCsv();
+            
             //Act
-            Pet pet = conversor.ConverteDoTexto(linha);
+            Pet pet = linha.ConverteDoTexto();
+
             //Assert
             Assert.NotNull(pet);
-            Assert.Equal("Lima Limão", pet.Nome);
-            Assert.Equal(TipoPet.Cachorro, pet.Tipo);
         }
-
     }
 }

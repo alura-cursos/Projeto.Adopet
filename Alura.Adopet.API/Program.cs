@@ -10,7 +10,7 @@ var builder = WebApplication.CreateBuilder(args);// Criando uma aplicação Web.
 
 builder.Logging.ClearProviders();
 builder.Logging.AddConsole();
-ConfigureLogRequestSerilogExtension.AddSerialogAPI(builder);
+//ConfigureLogRequestSerilogExtension.AddSerialogAPI(builder);
 
 //DI
 builder.Services.AddControllers().AddNewtonsoftJson(options =>

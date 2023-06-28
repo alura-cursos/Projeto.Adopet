@@ -7,15 +7,14 @@ using System.Threading.Tasks;
 
 namespace Alura.Adopet.Console.Util
 {
-    public class PetAPartirDoCsv
+    public static class PetAPartirDoCsv
     {
-        public Pet ConverteDoTexto(string linha)
-        {
-            string[]? propriedades = linha.Split(';');
-            // cria objeto Pet a partir da separação
+        public static Pet ConverteDoTexto(this string linha)
+        {     
+            string[]? propriedades = linha.Split(';');         
             return new Pet(Guid.Parse(propriedades[0]),
             propriedades[1],
-            int.Parse(propriedades[2]) == 0 ? TipoPet.Gato : TipoPet.Cachorro
+            int.Parse(propriedades[2]) == 1 ? TipoPet.Gato : TipoPet.Cachorro
             );
         }
     }
